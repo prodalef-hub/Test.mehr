@@ -1,0 +1,21 @@
+{
+  "name": "Mehr Store",
+  "short_name": "Mehr",
+  "description": "فروشگاه برنامه ساخته شده توسط Kiya Azadfar",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f4f7f5",
+  "theme_color": "#075c3a",
+  "orientation": "portrait",
+  "lang": "fa",
+  "dir": "rtl",
+
+  "icons": [
+    {
+      "src": "assets/logo.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
