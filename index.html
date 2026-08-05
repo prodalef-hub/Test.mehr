@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mehr Store</title>
+
+<meta name="description" content="فروشگاه برنامه مهر ساخته شده توسط Kiya Azadfar">
+
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="manifest" href="manifest.json">
+
+<meta name="theme-color" content="#075c3a">
+
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+<div class="container">
+
+
+<div class="logo-box">
+
+<img src="assets/logo.svg" alt="Mehr Store">
+
+<h1>
+Mehr Store
+</h1>
+
+
+</div>
+
+
+
+<button id="themeToggle">
+
+🌙
+
+</button>
+
+
+</div>
+
+</header>
+<main>
+
+
+<section class="hero container">
+
+
+<h2>
+فروشگاه برنامه‌های مهر
+</h2>
+
+
+<p>
+برنامه‌های مورد نیازت را سریع پیدا و دانلود کن
+</p>
+
+
+<div class="search-box">
+
+<input 
+type="text"
+id="searchInput"
+placeholder="جستجوی برنامه..."
+>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="container">
+
+
+<div class="categories">
+
+
+<button class="category active" data-category="همه">
+همه
+</button>
+
+
+<button class="category" data-category="ابزار">
+ابزار
+</button>
+
+
+<button class="category" data-category="اجتماعی">
+اجتماعی
+</button>
+
+
+<button class="category" data-category="سرگرمی">
+سرگرمی
+</button>
+
+
+<button class="category" data-category="موسیقی">
+موسیقی
+</button>
+
+
+<button class="category" data-category="ویرایش">
+ویرایش
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="container">
+
+
+<div id="appsContainer" class="apps-grid">
+
+
+<div class="loading">
+
+در حال بارگذاری برنامه‌ها...
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+  </main>
+  <footer class="footer">
+
+
+<p>
+ساخته شده با ❤️ توسط Kiya Azadfar
+</p>
+
+
+</footer>
+
+
+
+
+<script src="script.js"></script>
+
+
+<script>
+
+if ("serviceWorker" in navigator) {
+
+window.addEventListener("load", () => {
+
+navigator.serviceWorker.register("service-worker.js")
+
+.then(() => {
+
+console.log("Mehr Store PWA فعال شد");
+
+})
+
+.catch(error => {
+
+console.log("Service Worker Error:", error);
+
+});
+
+});
+
+}
+
+</script>
+
+
+
+</body>
+
+</html>
